@@ -1,0 +1,117 @@
+body{
+		  overflow-x:hidden;
+		  color:#000;
+		  font-family:Helvetica;
+		  background-color: #faf0e8;
+		  margin: 0;
+		  padding: 0;
+		}
+
+
+/* _________________________NAVIGATION ________________________________*/		
+
+.fixednav {
+	position: fixed;
+	width: 100vw;
+}
+
+.topnav {
+	position:relative;
+    overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  /*padding: 14px 16px;*/
+  text-decoration: none;
+  font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  border-top: 3px solid black;
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+  font-weight: bold;
+  color: black;
+  padding: 10 30 10	30;
+
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+	position: absolute;
+	right: 20px;
+}
+
+.topnav-right a {
+  border-left: 1px solid black;
+  padding: 10 30 10	30;
+}
+
+
+
+
+/* _________________________HELLO ________________________________*/
+
+.hello {
+	font-size: 100px;
+	text-align: center;
+	width: 100vw;
+	margin-top: 300px;
+	height: 100vh;
+}
+
+
+/* _________________________SIDE SCROLL ________________________________*/	
+
+#page {
+		  overflow:hidden;
+		  white-space:nowrap;
+		  position:fixed;
+		  top:40;
+		  left:0;
+		  right:0;
+		  bottom:0;
+		  background-color:#CCC;
+		  display:flex;
+		  flex-wrap:no-wrap;
+		}	
+.pane {
+		  flex:0 0 900px;
+		  height:100vh;
+		  display:flex;
+		  position:relative;
+		  align-items:center;
+		  justify-content:center;
+		  background-color: #faf0e8;
+		  /*background-color: #FFFFFF;*/
+		  border-top: 1px solid black;
+		  border-right: 1px solid black;
+		}
+
+.pane:hover {
+		  
+		  border-top: 2px solid black;
+		}
+
+.stack1 {
+		  width:500px;
+		  height: 50vh;
+		  background-color: white;
+		  border: 1px solid black;
+		  position: absolute;
+		  top:0; 
+		}
+.stack2 {
+		  width:500px;
+		  height: 50vh;
+		  border: 1px solid black;
+		  position: absolute;
+		  top:50vh; 
+		}
+.stack2:hover {
+		  border-top: 10px solid black;
+		}
