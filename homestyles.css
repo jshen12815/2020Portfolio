@@ -65,7 +65,7 @@ body{
 		  left:0;
 		  right:0;
 		  bottom:0;
-		  background-color:#ffffff;
+		  /*background-color:#ffffff;*/
 		  display:flex;
 		  flex-wrap:no-wrap;
 		}	
@@ -93,7 +93,6 @@ body{
 
 .card0 {
 	flex:0 0 700px;
-	background-color: blue;
 }
 
 .card1 {
@@ -114,7 +113,6 @@ body{
 
 .LAST {
 	flex:0 0 700px;
-	background-color: red;
 }
 
 

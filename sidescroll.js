@@ -11,22 +11,13 @@ var begStar = endStart.getBoundingClientRect().right;
 var lastEnd = last_pane.getBoundingClientRect().right;
 
 
-//get X value of first panel of second round
-//var repeatBeg = document.getElementById('repeatBegin');
-//var reStar = repeatBeg.getBoundingClientRect().left;
-//var rStar = get
-
-
-
 window.onscroll = function () {
-        	  // Horizontal Scroll.
-              //y=position of body
+        	  // Horizontal Scroll
         	  var y = document.body.getBoundingClientRect().top;
         	  page.scrollLeft = -y;
         	  
-        	  // Looping Scroll.
-              //dummyx = negative (left position of lastpane +window.scrollY);
-        	  //var diff = window.scrollY - dummy_x;
+        	  // Looping Scroll
+              // Find new locations based on window width
               var begEnd = lastEnd - window.innerWidth;
               var returnMid = begStar - window.innerWidth;
 
@@ -36,27 +27,31 @@ window.onscroll = function () {
               else if (window.scrollY == begEnd) {
                 window.scrollTo(0, returnMid);
               }
-
-               document.getElementById('variables').innerHTML = 
-               //page.offsetWidth;
-               window.scrollY;
+              // For testing: 
+              // document.getElementById('variables').innerHTML = window.scrollY;
 
         	}
-        	// Adjust the body height if the window resizes.
+        	
+// Adjust the body height if the window resizes.
 window.onresize = resize;
-        	// Initial resize.
+// Initial resize.
 resize();
 
 
-        	// Reset window-based vars
+// Reset window-based vars
 function resize() {
         	  var w = page.scrollWidth-window.innerWidth+window.innerHeight;
         	  document.body.style.height = w + 'px';
-        	  
-              //left position of pane in viewport + Yscrollposition
-        	  //dummy_x = last_pane.getBoundingClientRect().left+window.scrollY;
-        	//+window.scrollY
         	}
+
+
+
+
+
+//__NOTES___________________________________________________________________________________________________________________________________________________________
+
+
+
 
 
               //'rect:   '+ last_pane.getBoundingClientRect().left
