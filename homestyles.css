@@ -1,6 +1,9 @@
 /*_________COLOR SCHEME_____________*/
 :root{
-	--H_bkg: #ffffff;
+	/*--H_bkg: #ffffff;
+	--H_typeline:#343890;*/
+
+	--H_bkg: #FFFFFF;
 	--H_typeline:#343890;
 
 	--A_bkg: #F4ECEC;
@@ -281,7 +284,19 @@ body{
 		  justify-content:center;
 		  border-right: 1px solid var(--H_typeline);
 		  border-bottom: 1px solid var(--H_typeline);
+		  text-decoration: none;
+
+		color: var(--H_typeline);
+
 		}
+
+.paneLink {
+		margin:0;
+		display: block;
+		text-decoration: none;
+		color: var(--H_typeline);
+
+}
 
 
 .pane:hover {
