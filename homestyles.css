@@ -1,9 +1,9 @@
 /*_________COLOR SCHEME_____________*/
 :root{
-	--H_bkg: #F4ECEC;
-	--H_typeline:#3A8AD7;
+	--H_bkg: #ffffff;
+	--H_typeline:#343890;
 
-	--A_bkg: #FFFFFF;
+	--A_bkg: #F4ECEC;
 	--A_typeline:#3A8AD7;
 
 	--E_bkg: #FFFFFF;
@@ -93,13 +93,14 @@ body{
 
 .CTA:hover {
 	background-color: var(--H_typeline);
-	color:#FFFFFF;
+	color:var(--H_bkg);
 	text-decoration: none;
+
 }
 
 
 .textcontent{
-	border: 1px solid black;
+	border: 1px solid var(--H_typeline);
 	background-color: #3A8AD7;
 }
 
@@ -109,6 +110,7 @@ body{
 
 .fixednav {
 	width: 100vw;
+	border-bottom: 1px solid var(--H_typeline);
 }
 
 .topnav {
@@ -243,7 +245,7 @@ body{
 /* _________________________HOME SIDE SCROLL DESKTOP ________________________________*/	
 
 
-@media only screen and (min-height:480px) and (min-width: 900px){
+@media only screen and (min-width: 900px){
  .dummy {
  	display: none;
  }
@@ -277,14 +279,14 @@ body{
 		  position:relative;
 		  align-items:center;
 		  justify-content:center;
-		  border-right: 1px solid black;
+		  border-right: 1px solid var(--H_typeline);
 		  border-bottom: 1px solid var(--H_typeline);
 		}
 
 
 .pane:hover {
 		  
-		  border-top: 2px solid black;
+		  border-top: 6px solid var(--H_typeline);
 		}
 
 
@@ -298,15 +300,15 @@ body{
 }
 
 .card2 {
-	flex:0 0 800px;
+	flex:0 0 700px;
 }
 
 .card3 {
-	flex:0 0 800px;
+	flex:0 0 700px;
 }
 
 .card4 {
-	flex:0 0 300px;
+	flex:0 0 700px;
 }
 
 .LAST {
@@ -343,6 +345,44 @@ body{
 
 
 /* _________________________HOME MIN DESKTOP________________________________*/
+
+
+
+
+/* _________________________Experiments ________________________________*/
+
+
+#expRow {
+	overflow: hidden;
+	white-space:nowrap;
+	position:fixed;
+	top:42;
+	left:0;
+	right:0;
+	bottom:0;
+	display:flex;
+	flex-wrap:nowrap;
+}
+
+.expCol {
+	height:100vh-40;
+	padding:0;
+	display:flex;
+	flex-wrap: wrap;
+	align-items:center;
+	justify-content:center;
+	border-right: 1px solid var(--H_typeline);
+	border-bottom: 1px solid var(--H_typeline);
+		}
+.expBox {
+	position:;
+	height:50vh;
+	width:50vh;
+	border:1px solid var(--H_typeline);
+}
+
+
+
 
 
 
