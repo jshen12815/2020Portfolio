@@ -12,6 +12,8 @@ var lastEnd = last_pane.getBoundingClientRect().right;
 
 
 window.onscroll = function () {
+
+        if(screenwidth.matches){
         	  // Horizontal Scroll
         	  var y = document.body.getBoundingClientRect().top;
         	  page.scrollLeft = -y;
@@ -27,6 +29,9 @@ window.onscroll = function () {
               else if (window.scrollY == begEnd) {
                 window.scrollTo(0, returnMid);
               }
+          }
+          else{
+          }
               // For testing: 
               // document.getElementById('variables').innerHTML = window.scrollY;
 
@@ -36,6 +41,8 @@ window.onscroll = function () {
 window.onresize = resize;
 // Initial resize.
 resize();
+
+var screenwidth = window.matchMedia ("(min-width: 900px")
 
 
 // Reset window-based vars
