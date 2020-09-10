@@ -1,6 +1,6 @@
 /*_________COLOR SCHEME_____________*/
 :root{
-	--H_bkg: #FFFFFF;
+	--H_bkg: #F4ECEC;
 	--H_typeline:#3A8AD7;
 
 	--A_bkg: #FFFFFF;
@@ -170,9 +170,6 @@ body{
  /*_________________________mobile ________________________________	*/
 
 
-
-
-
 /*
 #page {
 	top:40;
@@ -192,7 +189,7 @@ body{
 /*_________________________mobile hide repeat________________________________	*/
 
 
-@media only screen and (max-width: 900px){
+@media screen and (max-width: 900px){
 
 
 .hidden {
