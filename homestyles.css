@@ -165,10 +165,17 @@ body{
 }
 
 
-/* _________________________mobile ________________________________	
+ _________________________mobile ________________________________	
 
-#nonmobile {display: none;}
+.nonmobile {
+	display: none;
 
+}
+
+#hidden{
+	display: none;
+}
+/*
 #page {
 	top:40;
 	left:0;
