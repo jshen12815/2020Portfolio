@@ -108,14 +108,12 @@ body{
 /* _________________________NAVIGATION ________________________________*/		
 
 .fixednav {
-	position: fixed;
 	width: 100vw;
-	background-color: var(--H_bkg);
 }
 
 .topnav {
 	position:relative;
-    overflow: hidden;
+    overflow: hidden
 }
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -165,16 +163,16 @@ body{
 }
 
 
- _________________________mobile ________________________________	
-
-.nonmobile {
-	display: none;
-
+.topnav .icon {
+  display: none;
 }
 
-#hidden{
-	display: none;
-}
+ /*_________________________mobile ________________________________	*/
+
+
+
+
+
 /*
 #page {
 	top:40;
@@ -191,11 +189,75 @@ body{
 	border-bottom: 1px solid var(--H_typeline);
 }*/
 
+/*_________________________mobile hide repeat________________________________	*/
+
+
+@media only screen and (max-width: 900px){
+
+
+.hidden {
+	display: none !important;
+}
+
+.fixednav {
+	position: sticky;
+	width: 100vw;
+	border-bottom: 1px solid var(--H_typeline);
+}
+
+.topnav-right a {
+    display: none;
+    border: none;
+  }
+
+
+  
+.topnav-right a.icon {
+    float: right;
+    display: block;
+  }
+
+
+  .topnav-right.responsive {position: relative;}
+  .topnav-right.responsive a.icon {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 300;
+  }
+  .topnav-right.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav-right.responsive .dropdown {float: none;}
+  .topnav-right.responsive .dropdown-content {position: relative;}
+  .topnav-right.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+   .dummy {
+ 	display: block;
+ }
+ 
+}
+
 /* _________________________HOME SIDE SCROLL DESKTOP ________________________________*/	
 
 
 @media only screen and (min-height:480px) and (min-width: 900px){
+ .dummy {
+ 	display: none;
+ }
 
+.fixedNav {
+	position: fixed;
+}
+
+.hidedesk {
+	display: none !important;
+}
 
 #page {
 		  border-top: 1px solid var(--H_typeline);

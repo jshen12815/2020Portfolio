@@ -51,7 +51,14 @@ function resize() {
         	  document.body.style.height = w + 'px';
         	}
 
-
+function mobileNav() {
+  var x = document.getElementById("responsivenav");
+  if (x.className === "topnav-right") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav-right";
+  }
+}
 
 
 
