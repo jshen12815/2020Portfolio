@@ -19,6 +19,13 @@ body{
 		}
 /* _________________________GENERAL STYLING ________________________________*/	
 
+
+p {
+	overflow-wrap: normal: 
+	word-break: break-all;
+	white-space: normal;
+}
+
 .H1 {
 	font-weight: 700;
 	font-size: 30px;
@@ -29,6 +36,7 @@ body{
 	font-weight: 400;
 	font-size: 30;
 	color: var(--H_typeline);
+	overflow-wrap: normal;
 }
 .projNum {
 	font-weight: 700;
@@ -118,18 +126,29 @@ body{
 #page {
 		  overflow: hidden;
 		  position: absolute;
-		  top:0;
+		  top: 50px;
 		}	
+
+.pane {
+	height:100vh-50px;
+	padding:0;
+}
+
 
 .content {
 	/*background-color: #F4ECEC;;*/
 	border-bottom: 1px solid var(--H_typeline);
-}
+	cursor:pointer;
+	display: block;
+	height:90%;
+	width: 100%;
+	overflow-wrap: normal;
+	}
 
 .content:hover {
 	border-top: 10px;
 }
-.paneLink{
+/*.paneLink{
 	display:block;
 	width:100%;
 	height:100%;
@@ -137,21 +156,25 @@ body{
 	text-decoration: none;
 	z-index: 9900
 	border: 1px solid var(--H_typeline);
-}
+}*/
 
 .stack1 {
-	padding-left: 10px;
-	padding-top: 30px;
-	padding-right: 20px;
+	padding-left:30px;
+	padding-right:80px;
+
 }
 
 .stack2{
-	padding-left:10px;
 	text-decoration: none;
+	border-top: 1px solid var(--H_typeline);
+	padding-left:40px;
+	padding-top: 70px;
 }
 
-
 .stacked {
+	width: 100%;
+	height:50%;
+	position:static;
 
 }
 
@@ -197,6 +220,13 @@ body{
     text-align: left;
   }
 
+.pane {
+	border-bottom: 1px solid var(--H_typeline);
+}
+
+
+
+
 }
 
 /* _________________________DESKTOP_________________________ */
@@ -232,9 +262,12 @@ body{
 
 
 .pane {
-	align-items:center;
-	justify-content:center;
-	padding:0;
+	display:flex;
+	position:relative;
+	overflow: hidden;
+	border-left: 1px solid var(--H_typeline);
+	/*	align-items:center;
+	justify-content:center;*/
 }
 
 
@@ -251,14 +284,32 @@ body{
 		  flex-wrap:no-wrap;
 		}	
 
-.pane {
-		  height:100vh-40;
-		  display:flex;
-		  position:relative;
-		}
 
 .stack1 {
-	width: 220px;
+	width: 80%;
+	height: 50%;
+	position: absolute;
+	padding-left:30px;
+	padding-right:80px;
+
+}
+
+.stack2{
+	width: 100%;
+	padding-left:10px;
+	text-decoration: none;
+	border-top: 1px solid var(--H_typeline);
+	position: absolute;
+	bottom:0;
+	padding-left:40px;
+	padding-top: 70px;
+}
+
+.stacked {
+	width: 100%;
+	height:50%;
+	position:static;
+
 }
 
 .card0 {
