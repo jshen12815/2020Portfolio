@@ -49,9 +49,9 @@ p {
 	font-weight: 700;
 	font-size: 20;
 }
-.desc {
+.pDesc {
 	font-weight: 300;
-	font-size: 12;
+	font-size: 10;
 }
 
 .home{
@@ -137,10 +137,9 @@ p {
 
 .content {
 	/*background-color: #F4ECEC;;*/
-	border-bottom: 1px solid var(--H_typeline);
 	cursor:pointer;
 	display: block;
-	height:90%;
+	height:100%;
 	width: 100%;
 	overflow-wrap: normal;
 	}
@@ -224,6 +223,10 @@ p {
 	border-bottom: 1px solid var(--H_typeline);
 }
 
+.content {
+	padding:30px 5px 30px 20px;
+}
+
 
 
 
@@ -232,6 +235,9 @@ p {
 /* _________________________DESKTOP_________________________ */
 @media only screen and (min-width: 600px){
 
+.deskHidden{
+	display:none;
+}
 /* Right-aligned section inside the top navigation */
 .topnav {
 	width: 100vw;
