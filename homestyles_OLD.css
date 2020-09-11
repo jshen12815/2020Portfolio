@@ -206,7 +206,7 @@ body{
 }
 
 .content:hover {
- 	border-top: 12px solid var(--H_typeline);
+ 	border-top: 50px solid var(--H_typeline);
 
 }
 
