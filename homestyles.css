@@ -22,7 +22,6 @@ body{
 
 p {
 	overflow-wrap: normal: 
-	word-break: break-all;
 	white-space: normal;
 }
 
@@ -120,7 +119,6 @@ p {
 
 
 
-
 /* _________________________PANES ________________________________*/	
 
 #page {
@@ -142,6 +140,8 @@ p {
 	height:100%;
 	width: 100%;
 	overflow-wrap: normal;
+	padding-left: 30px;
+	padding-top: 30px;
 	}
 
 .content:hover {
@@ -160,6 +160,8 @@ p {
 .stack1 {
 	padding-left:30px;
 	padding-right:80px;
+	word-break:break-all;
+	white-space: normal;
 
 }
 
@@ -225,6 +227,14 @@ p {
 
 .content {
 	padding:30px 5px 30px 20px;
+}
+
+.stack1 {
+	padding-left:30px;
+	padding-right:80px;
+	overflow-wrap: normal;
+	max-width: 100%;
+
 }
 
 
