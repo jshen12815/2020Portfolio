@@ -1,42 +1,10 @@
 /*_________COLOR SCHEME_____________*/
 :root{
 	/*--H_bkg: #ffffff;
-	--H_typeline:#343890;*/
+	--H_typeline:#343890;  F90000*/
 
 	--H_bkg: #FFFFFF;
 	--H_typeline:#343890;
-
-	--A_bkg: #F4ECEC;
-	--A_typeline:#3A8AD7;
-
-	--E_bkg: #FFFFFF;
-	--E_typeline:#3A8AD7;
-
-	/*__________________Project Pages ___________________________*/
-	--Juice_bkg: #FFFFFF;
-	--Juice_typeline:#3A8AD7;
-
-	--Gtech_bkg: #FFFFFF;
-	--Gtech_typeline:#3A8AD7;
-
-	--MCP_bkg: #FFFFFF;
-	--MCP_typeline:#3A8AD7;
-
-	--TGL_bkg: #FFFFFF;
-	--TGL_typeline:#3A8AD7;
-
-	--SSG_bkg: #FFFFFF;
-	--SSG_typeline:#3A8AD7;
-
-	--VZN_bkg:#FFFFFF;
-	--VZN_typeline:#3A8AD7;
-
-	--GLDMN_bkg:#FFFFFF;
-	--GLDMN_typeline:#3A8AD7;
-
-	/*__________________Project Pages ___________________________*/
-	--SXSW_bkg: #FFFFFF;
-	--SXSW_typeline:#3A8AD7;
 
 }
 
@@ -109,51 +77,6 @@ body{
 
 
 
-/* _________________________NAVIGATION ________________________________*/		
-
-.fixednav {
-	width: 100vw;
-	border-bottom: 1px solid var(--H_typeline);
-}
-
-.topnav {
-	position:relative;
-    overflow: hidden
-}
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: var(--H_typeline);
-  text-align: center;
-  /*padding: 14px 16px;*/
-  text-decoration: none;
-  font-size: 17px;
-}
-/* Change the color of links on hover */
-.topnav a:hover {
-  border-top: 3px solid var(--H_typeline);
-}
-/* Add a color to the active/current link */
-.topnav a.active {
-  /*-webkit-text-stroke: 1px var(--H_typeline);*/
-  font-weight: bold;
-  color: var(--H_typeline);
-  padding: 10 30 10	30;
-
-}
-
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-	position: absolute;
-	right: 20px;
-}
-
-.topnav-right a {
-  border-left: 1px solid var(--H_typeline);
-  padding: 10 30 10	30;
-}
-
-
 .dot {
   height: 25px;
   width: 25px;
@@ -163,124 +86,41 @@ body{
 }
 
 
-.topnav .icon {
-  display: none;
-}
+/* _________________________Navigation ________________________________*/	
 
- /*_________________________mobile ________________________________	*/
-
-#page {
-		  border-top: 1px solid var(--H_typeline);
-		  overflow: hidden;
-		  position: absolute;
-		}	
-
-.pane {
-	align-items:center;
-	justify-content:center;
-	padding:0;
+.topnav {
+	text-decoration: none;
+	border-bottom: 1px solid var(--H_typeline);
+    font-size: 20px;
+    padding: 10px;
 }
 
 
-
-.paneLink {
-		margin:0;
-		padding: 100;
-		align-items: center;
-		display: block;
-		text-decoration: none;
-		color: var(--H_typeline);
-
-}
-
-.content {
-	background-color: #F4ECEC;
-	height: 100%;
-	width: 100%;
-	padding-left: 50px;
+.active {
 	text-decoration: none;
 	color: var(--H_typeline);
-	border: 1px solid var(--H_typeline);
-	align-items:center;
-	justify-content:center;
+}
+.icon{
+	float: right;
+	text-decoration: none;
+	color: var(--H_typeline);
 }
 
-.content:hover {
- 	border-top: 12px solid var(--H_typeline);
-
-}
-
-.stack1 {
-		  /*border: 1px solid var(--H_typeline);*/
-		  position: absolute;
-		  left:0;
-		  top:0;
-		  height: 400px;
-		/*  background-color: var(--H_bkg);*/
-		}
-
-
-
-.stack2 {
-		  height: 80vh;
-		  border-top: 1px solid var(--H_typeline);
-		  position: absolute;
-		  left:0;
-		  height: 400px;
-		}
-.stack2:hover {
-		  border-top: 10px solid var(--H_typeline);
-		}
-
-
-
-/*
-#page {
-	top:40;
-	left:0;
-	right:0;
-}
-
-.pane {
-	border-bottom: 1px solid var(--H_typeline);
-	padding: 20;
-}
-
-.stack1 {
-	border-bottom: 1px solid var(--H_typeline);
-}*/
-
-/*_________________________mobile hide repeat________________________________	*/
-
-
-@media screen and (max-width: 600px){
-
-
-.hidden {
-	display: none !important;
-}
-
-.fixednav {
-	position: sticky;
-	width: 100vw;
-	border-bottom: 1px solid var(--H_typeline);
-}
 
 .topnav-right a {
     display: none;
     border: none;
+    text-decoration: none;
+    color: var(--H_typeline);
   }
 
-
-  
 .topnav-right a.icon {
     float: right;
     display: block;
   }
 
-
-  .topnav-right.responsive {position: relative;}
-  .topnav-right.responsive a.icon {
+ .topnav-right.responsive {position: relative;}
+ .topnav-right.responsive a.icon {
     position: fixed;
     right: 0;
     top: 0;
@@ -298,125 +138,7 @@ body{
     width: 100%;
     text-align: left;
   }
-   .dummy {
- 	display: block;
- }
- 
-}
-
-/* _________________________HOME SIDE SCROLL DESKTOP ________________________________*/	
-
-
-@media only screen and (min-width: 600px){
- .dummy {
- 	display: none;
- }
-
-.fixedNav {
-	position: fixed;
-}
-
-.hidedesk {
-	display: none !important;
-}
-
-#page {
-		  /*border-top: 1px solid var(--H_typeline);
-		  overflow: hidden;*/
-		  white-space:nowrap;
-		  position:fixed;
-		  top:42;
-		  left:0;
-		  right:0;
-		  bottom:0;
-		  display:flex;
-		  flex-wrap:no-wrap;
-		}	
-
-.pane {
-		  height:100vh-40;
-		  display:flex;
-		  position:relative;
-		}
-
-
-
-.card0 {
-	flex:0 0 700px;}
-
-.card1 {
-	flex:0 0 700px;
-}
-
-.card2 {
-	flex:0 0 700px;
-}
-
-.card3 {
-	flex:0 0 700px;
-}
-
-.card4 {
-	flex:0 0 700px;
-}
-
-.LAST {
-	flex:0 0 700px;
-}
-
-
-}
-
-
-
-/* _________________________HOME MIN DESKTOP________________________________*/
 
 
 
 
-/* _________________________Experiments ________________________________*/
-
-
-#expRow {
-	overflow: hidden;
-	white-space:nowrap;
-	position:fixed;
-	top:42;
-	left:0;
-	right:0;
-	bottom:0;
-	display:flex;
-	flex-wrap:nowrap;
-}
-
-.expCol {
-	height:100vh-40;
-	padding:0;
-	display:flex;
-	flex-wrap: wrap;
-	align-items:center;
-	justify-content:center;
-	border-right: 1px solid var(--H_typeline);
-	border-bottom: 1px solid var(--H_typeline);
-		}
-.expBox {
-	position:;
-	height:50vh;
-	width:50vh;
-	border:1px solid var(--H_typeline);
-}
-
-
-
-
-
-
-/* _________________________HELLO ________________________________*/
-
-.hello {
-	font-size: 100px;
-	text-align: center;
-	width: 100vw;
-	margin-top: 300px;
-	height: 100vh;
-}

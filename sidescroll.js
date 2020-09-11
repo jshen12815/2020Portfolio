@@ -15,7 +15,7 @@ var lastEnd = last_pane.getBoundingClientRect().right; //position at the end of 
 
 window.onscroll = function () {
 
-        if(window.matchMedia ("(min-width: 900px)").matches){
+        if(window.matchMedia ("(min-width: 1000px)").matches){
         	  // Horizontal Scroll
         	  var y = document.body.getBoundingClientRect().top;
         	  page.scrollLeft = -y;
