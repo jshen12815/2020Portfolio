@@ -1,5 +1,6 @@
-<html>
+<!DOCTYPE html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="homestyles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -13,6 +14,7 @@
 <!-- Navigation___________-->
 <div class = "topnav">	
 	   <!--jessicashen-->
+	   <div>
 	   <a class="active" href="index.html">Jessica Shen</a>
 	   <a href="javascript:void(0);" class="icon" onclick="mobileNav()">&#9776;</a>
 	   <!--responsive dropdown part-->
@@ -21,6 +23,7 @@
 		    <a href="experiments.html">Experiments</a>
 		    <a href="about.html">About</a>
 	  </div>
+	</div>
 </div>
 
 
@@ -28,21 +31,26 @@
 <div id="page">
     <div class="pane card0"> 
 						  	<div class = "stacked">
-									   			<a class="stack1 paneLink content" href = "project01.html">
-									   				<!--div class = "content"-->
-										   				<div class = "Headline1">Hi there! I'm Jess.</div>
-										   				<p> I'm a experience and motion designer that 
+
+									   	<!--a class="paneLink" href = "project01.html"-->
+						  				<div class = "stack1 content">
+									   				<div class = "linkContent">
+										   				<p class = "H1">Hi there! I'm Jess.</p>
+										   				<p class = "B1"> I'm a experience and motion designer that 
 										   				    <br>believes in the power of design to bring 
 										   				    <br>people together through thoughtful experiences.
-										   				    <br> 
+										   				
 										   					<br>Currently an Experience Design Director at R/GA,
 										   					<br>creating products and tools for global clients. 
 										   				</p>
 
 										   				 <a class = "CTA" href="about.html">More about Me</a>
-													<!--/div-->	
-												</a>			
-												<a class="stack2 paneLink content" href = "project01.html" >
+													</div>	
+												
+												</div>	<!--/a-->
+
+												<div class = "stack2 content hidden">
+													<!--a class="paneLink" href = "project01.html" -->
 									   				<!--div class = "content"-->
 										   				<p> Contact me
 										   				    <br>hello@jessicashen.com 
@@ -54,12 +62,14 @@
 										   				</div>
 										   				<p> Design & Development © Jessica Shen 2020</p>
 													<!--/div-->
-												</a>				
+												<!--/a--></div>			
 							</div>
   </div>
 	<!--__________Double Stack Jess__________-->
   <div class="pane card1" > 
-						<a class = "content" href= "project01.html">
+
+						<a class="paneLink" href = "project01.html">
+						<div class = "content" href= "project01.html">
 							   	   <div class = "projNum">01 </div>
 								   <div> <img src="homejuice.jpg" class= "projImage" style="width:300px;"></div>
 								   <div class = "projName"> Starting a new telecomm Revolution </div>
@@ -68,8 +78,8 @@
 								   							<br> Experience Strategy
 								   							</p> </div>
 								   <div class = "projClient desc"> Verizon </div>
-								
-							</a>
+						</div>
+						</a>
    	</div>
 	<!--__________   Juice____________________-->
   <div class="pane card2">	

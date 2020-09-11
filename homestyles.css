@@ -19,14 +19,16 @@ body{
 		}
 /* _________________________GENERAL STYLING ________________________________*/	
 
-.headline1 {
+.H1 {
 	font-weight: 700;
-	font-size: 30;
+	font-size: 30px;
+	color: var(--H_typeline);
 }
 
-.body1 {
-	font-weight: 600;
+.B1 {
+	font-weight: 400;
 	font-size: 30;
+	color: var(--H_typeline);
 }
 .projNum {
 	font-weight: 700;
@@ -56,7 +58,7 @@ body{
 	display: inline-block;
 	border: 1px solid var(--H_typeline);
 	padding: 10px;
-	margin-top: 50px;
+	margin-top: 20px;
 	color:var(--H_typeline);
 	text-decoration: none;
 	margin-bottom: 50px;
@@ -88,36 +90,92 @@ body{
 
 /* _________________________Navigation ________________________________*/	
 
+
 .topnav {
 	text-decoration: none;
 	border-bottom: 1px solid var(--H_typeline);
-    font-size: 20px;
+    font-size: 16px;
     padding: 10px;
+    background-color: var(--H_bkg);
+    z-index: 9999
 }
-
 
 .active {
 	text-decoration: none;
 	color: var(--H_typeline);
 }
+.topnav-right a {
+    border: none;
+    text-decoration: none;
+    color: var(--H_typeline);
+  }
+
+
+
+
+/* _________________________PANES ________________________________*/	
+
+#page {
+		  overflow: hidden;
+		  position: absolute;
+		  top:0;
+		}	
+
+.content {
+	/*background-color: #F4ECEC;;*/
+	border-bottom: 1px solid var(--H_typeline);
+}
+
+.content:hover {
+	border-top: 10px;
+}
+.paneLink{
+	display:block;
+	width:100%;
+	height:100%;
+	background-color: #F4ECEC;
+	text-decoration: none;
+	z-index: 9900
+	border: 1px solid var(--H_typeline);
+}
+
+.stack1 {
+	padding-left: 10px;
+	padding-top: 30px;
+	padding-right: 20px;
+}
+
+.stack2{
+	padding-left:10px;
+	text-decoration: none;
+}
+
+
+.stacked {
+
+}
+
+/* _________________________MOBILE_________________________ */
+@media only screen and (max-width: 600px){
+.hidden {
+	display: none !important;
+}
+
 .icon{
 	float: right;
 	text-decoration: none;
 	color: var(--H_typeline);
 }
 
-
 .topnav-right a {
     display: none;
-    border: none;
-    text-decoration: none;
-    color: var(--H_typeline);
   }
 
 .topnav-right a.icon {
     float: right;
     display: block;
   }
+
 
  .topnav-right.responsive {position: relative;}
  .topnav-right.responsive a.icon {
@@ -139,6 +197,92 @@ body{
     text-align: left;
   }
 
+}
+
+/* _________________________DESKTOP_________________________ */
+@media only screen and (min-width: 600px){
+
+/* Right-aligned section inside the top navigation */
+.topnav {
+	width: 100vw;
+	position: fixed;
+	background-color: var(--H_bkg)
+}
+
+.active {
+	/*color: var;*/
+}
+
+.topnav-right {
+	float: right;
+    display: block;
+    padding-right: 20px
+}
+
+.topnav-right a {
+  border-left: 1px solid var(--H_typeline);
+  padding: 10px;
+  float: center;
+  }
+
+.topnav .icon {
+  display: none;
+}
 
 
 
+.pane {
+	align-items:center;
+	justify-content:center;
+	padding:0;
+}
+
+
+
+#page {
+
+		  white-space:nowrap;
+		  position:fixed;
+		  top:42;
+		  left:0;
+		  right:0;
+		  bottom:0;
+		  display:flex;
+		  flex-wrap:no-wrap;
+		}	
+
+.pane {
+		  height:100vh-40;
+		  display:flex;
+		  position:relative;
+		}
+
+.stack1 {
+	width: 220px;
+}
+
+.card0 {
+	flex:0 0 700px;}
+
+.card1 {
+	flex:0 0 700px;
+}
+
+.card2 {
+	flex:0 0 700px;
+}
+
+.card3 {
+	flex:0 0 700px;
+}
+
+.card4 {
+	flex:0 0 700px;
+}
+
+.LAST {
+	flex:0 0 700px;
+}
+
+
+}
