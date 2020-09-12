@@ -3,7 +3,7 @@
 	/*--H_bkg: #ffffff;
 	--H_typeline:#343890;  F90000*/
 
-	--H_bkg: #FFFFFF;
+	--H_bkg: #FBF8ED;
 	--H_typeline:#343890;
 
 }
@@ -26,7 +26,12 @@ p {
 p.b2 {
 	overflow-wrap: normal: 
 	white-space: normal;
-	font-size: 14px;
+	font-size: 12px;
+}
+
+p.pn1{
+	font-weight: 700;
+	font-size: 24px;
 }
 
 .H1 {
@@ -48,10 +53,7 @@ p.b2 {
 	color: #FFFFFF;*/
 }
 
-.projName{
-	font-weight: 700;
-	font-size: 20;
-}
+
 .b2 {
 	font-weight: 300;
 	font-size: 6;
@@ -154,7 +156,7 @@ p.b2 {
 	}
 
 .content:hover {
-	border-top: 10px solid var(--H_typeline);
+	border-top: 8px solid var(--H_typeline);
 
 }
 /*.paneLink{
@@ -168,9 +170,8 @@ p.b2 {
 }*/
 
 .stack1 {
-	padding-left:30px;
 	padding-right:80px;
-	word-break:break-all;
+	/*word-break:break-all;*/
 	white-space: normal;
 
 }
@@ -178,7 +179,6 @@ p.b2 {
 .stack2{
 	text-decoration: none;
 	border-top: 1px solid var(--H_typeline);
-	padding-left:40px;
 	padding-top: 70px;
 }
 
@@ -187,7 +187,8 @@ p.b2 {
 	display: flex;
 	flex-direction:row;
 	justify-content: space-around
-	border: 1px solid red;
+	width:500px;
+
 }
 
 
@@ -218,6 +219,33 @@ p.b2 {
 
 }
 
+.pflip0{
+	display:flex;
+    flex-direction:column
+}
+
+.pflip1{
+	display:flex;
+    flex-direction:column
+    padding-bottom:0px;
+}
+
+.pflip2{
+	padding-top: 60px;
+	padding-left: 10px;
+	display:flex;
+    flex-direction:column;
+    z-index: 999;}
+
+.pflip3{	
+	padding-top: 40px;
+	display: block;
+    padding-left: 30px;
+    text-align: right;
+}
+
+
+
 .stacked {
 	width: 100%;
 	height:50%;
@@ -225,15 +253,11 @@ p.b2 {
 
 }
 
-.imgContainer{
-	overflow: hidden;
-	width: 500px;
-	height: 50vh;
-}
+
 
 /* _________________________MOBILE_________________________ */
 @media only screen and (max-width: 600px){
-.hidden {
+.mHide {
 	display: none !important;
 }
 
@@ -283,12 +307,13 @@ p.b2 {
 }
 
 .stack1 {
-	padding-left:30px;
+	padding-left:10px;
 	padding-right:80px;
 	overflow-wrap: normal;
 	max-width: 100%;
 
 }
+
 
 .descrip {
 	width:100%;
@@ -298,13 +323,20 @@ p.b2 {
 	width: calc(100vw - 20px);
 }
 
+.projImage{
+	width: 800px;
+	min-height: 50vh;
+}
 
+.projImage01{
+	height: 500px;
+}
 }
 
 /* _________________________DESKTOP_________________________ */
 @media only screen and (min-width: 600px){
 
-.deskHidden{
+.dHide{
 	display:none;
 }
 /* Right-aligned section inside the top navigation */
@@ -341,8 +373,6 @@ p.b2 {
 	position:relative;
 	overflow: hidden;
 	border-left: 1px solid var(--H_typeline);
-	/*	align-items:center;
-	justify-content:center;*/
 }
 
 
@@ -363,8 +393,8 @@ p.b2 {
 .stack1 {
 	width: 80%;
 	height: 50%;
-	position: absolute;
-	padding-left:30px;
+	/*position: absolute;*/
+	padding-left: 0px;
 	padding-right:80px;
 
 }
@@ -376,7 +406,7 @@ p.b2 {
 	border-top: 1px solid var(--H_typeline);
 	position: absolute;
 	bottom:0;
-	padding-left:40px;
+	padding-left:10px;
 	padding-top: 70px;
 }
 
@@ -387,28 +417,129 @@ p.b2 {
 
 }
 
-.projImage{
-	width: 800px;
+/*
+.card {
+	align-items:center;
+	justify-content:center;
+}*/
+
+.c0 {
+	flex:0 0 560px;
 }
 
-.card0 {
-	flex:0 0 700px;}
+.c1 {
+	flex:0 0 700px;
+}
 
-.card1 {
+.img01{
+	overflow: hidden;
+	width: 650px;
+	height: 50vh;
+}
+
+.c2 {
+	flex:0 0 550px;
+}
+
+.img02{
+	overflow: hidden;
+	width: 500px;
+	height: 50vh;
+}
+
+
+.c3 {
+	flex:0 0 700px;
+}
+.img03{
+	overflow: hidden;
+	width: 500px;
+	height: 50vh;
+}
+.stack3 {
+	width: 80%;
+	height: 50%;
+	/*position: absolute;*/
+	padding-left: 0px;
+	padding-right:80px;
+
+}
+
+.stack4{
+	width: 100%;
+	padding-left:10px;
+	text-decoration: none;
+	border-top: 1px solid var(--H_typeline);
+	position: absolute;
+	bottom:0;
+	padding-left:10px;
+	padding-top: 70px;
+}
+
+
+.c4 {
+	flex:0 0 400px;
+}
+
+
+.img04{
+	overflow: hidden;
+	width: 300px;
+	height:70vh;
+}
+
+
+
+.c5 {
 	flex:0 0 600px;
 }
+.img05{
+	overflow: hidden;
+	width: 500px;
+	height: 50vh;
+}
 
-.card2 {
+
+.c6 {
 	flex:0 0 700px;
 }
 
-.card3 {
+.img06{
+	overflow: hidden;
+	width: 500px;
+	height: 50vh;
+}
+
+
+.c7 {
 	flex:0 0 700px;
 }
 
-.card4 {
+.img07{
+	overflow: hidden;
+	width: 500px;
+	height: 50vh;
+}
+
+
+
+
+.c8 {
 	flex:0 0 700px;
 }
+
+
+.img08{
+	overflow: hidden;
+	width: 500px;
+	height: 50vh;
+}
+
+
+
+
+
+
 
 .LAST {
 	flex:0 0 700px;
