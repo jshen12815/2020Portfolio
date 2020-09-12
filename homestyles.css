@@ -34,6 +34,13 @@ p.pn1{
 	font-size: 24px;
 }
 
+p.CTAtext {
+	font-size: 15px;
+	text-decoration: none;
+	color:var(--H_typeline);
+	overflow-wrap: normal
+}
+
 .H1 {
 	font-weight: 700;
 	font-size: 30px;
@@ -153,10 +160,11 @@ p.pn1{
 	overflow-wrap: normal;
 	padding-left: 30px;
 	padding-top: 30px;
+    border-top: 5px solid var(--H_bkg);
 	}
 
 .content:hover {
-	border-top: 8px solid var(--H_typeline);
+	border-top: 5px solid var(--H_typeline);
 
 }
 /*.paneLink{
@@ -277,6 +285,7 @@ p.pn1{
   }
 
 
+
  .topnav-right.responsive {position: relative;}
  .topnav-right.responsive a.icon {
     position: fixed;
@@ -394,7 +403,7 @@ p.pn1{
 	width: 80%;
 	height: 50%;
 	/*position: absolute;*/
-	padding-left: 0px;
+	padding-left: 30px;
 	padding-right:80px;
 
 }
@@ -417,11 +426,19 @@ p.pn1{
 
 }
 
-/*
-.card {
-	align-items:center;
-	justify-content:center;
-}*/
+
+.card{
+	/* align-items:center;
+	justify-content:center;*/
+	overflow: hidden;
+}
+.descrip {
+  }
+
+.projName{
+	padding-top: 20px;
+}
+
 
 .c0 {
 	flex:0 0 560px;
@@ -449,31 +466,39 @@ p.pn1{
 
 
 .c3 {
-	flex:0 0 700px;
+	flex:0 0 670px;
+
 }
 .img03{
+	margin-top: 5vh;
 	overflow: hidden;
-	width: 500px;
-	height: 50vh;
+	width: 600px;
+	height: 280px;
 }
+
 .stack3 {
-	width: 80%;
-	height: 50%;
+	width: 100%;
+	height: 150%;
 	/*position: absolute;*/
-	padding-left: 0px;
+	padding-left: 30px;
 	padding-right:80px;
+	overflow: hidden;
 
 }
 
 .stack4{
+	color: white;
 	width: 100%;
-	padding-left:10px;
-	text-decoration: none;
+	height: 20%;
 	border-top: 1px solid var(--H_typeline);
 	position: absolute;
 	bottom:0;
-	padding-left:10px;
-	padding-top: 70px;
+	z-index: 998;
+	background-color: var(--H_bkg);
+}
+.stack4:hover{
+	border-top: 5px solid var(--H_typeline);
+	cursor:pointer;
 }
 
 
@@ -506,13 +531,38 @@ p.pn1{
 
 .img06{
 	overflow: hidden;
-	width: 500px;
-	height: 50vh;
+	width: 600px;
+	height:350px;
 }
 
 
+.stack5 {
+	width: 100%;
+	height: 130%;
+	/*position: absolute;*/
+	padding-left: 30px;
+	padding-right:80px;
+	overflow: hidden;
+
+}
+.stack6{
+	color: white;
+	width: 100%;
+	height: 40%;
+	border-top: 1px solid var(--H_typeline);
+	position: absolute;
+	bottom:0;
+	z-index: 997;
+	background-color: var(--H_bkg);
+}
+
+.stack6:hover{
+	border-top: 5px solid var(--H_typeline);
+	cursor:pointer;
+}
+
 .c7 {
-	flex:0 0 700px;
+	flex:0 0 550px;
 }
 
 .img07{
@@ -525,25 +575,27 @@ p.pn1{
 
 
 .c8 {
-	flex:0 0 700px;
+	flex:0 0 560px;
 }
 
 
 .img08{
 	overflow: hidden;
 	width: 500px;
-	height: 50vh;
+	height: 65vh;
+}
+
+
 }
 
 
 
 
-
-
-
-.LAST {
-	flex:0 0 700px;
+@media only screen and (max-height: 600px){
+.imgContainer{
+	display: none;
 }
-
-
+.stack2 {
+	display: none;
+}
 }

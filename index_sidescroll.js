@@ -1,21 +1,28 @@
 
 //Js for side scroll on Homepage
-// get array of pane objects and select last one
-var page = document.getElementById('page');
-var panes = page.getElementsByClassName('pane');
-var last_pane = panes[panes.length-1];
+// get array of pane objects and select last on
+//var page = document.getElementById('page');
+//var panes = page.getElementsByClassName('pane');
+//var last_pane = panes[panes.length-1];
 
 //var expRow = document.getElementById('expRow');
 
 //get X position from left of last panel of first round and last panel
+
+
+
 var endStart = document.getElementById('endStart') //last panel of first round
+var endLast = document.getElementById('endLast')
+
+
+
 var begStar = endStart.getBoundingClientRect().right; //position at the end of first round
-var lastEnd = last_pane.getBoundingClientRect().right; //position at the end of 2nd round
+var lastEnd = endLast.getBoundingClientRect().right; //position at the end of 2nd round
 
 
 window.onscroll = function () {
 
-        if(window.matchMedia ("(min-width: 1000px)").matches){
+        if(window.matchMedia ("(min-width: 480px)").matches){
         	  // Horizontal Scroll
         	  var y = document.body.getBoundingClientRect().top;
         	  page.scrollLeft = -y;
