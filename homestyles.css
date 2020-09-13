@@ -3,16 +3,36 @@
 	/*--H_bkg: #ffffff;
 	--H_typeline:#343890;  F90000*/
 
-	--H_bkg: #FBF8ED;
+	--H_bkg: #FFFFFF; /*#FBF8ED;*/
 	--H_typeline:#343890;
 
 }
 
 
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+
+
 body{
+		  /*hide scrollbars */
 		  overflow-x:hidden;
+
+
 		  color:var(--H_typeline);
-		  font-family:'Roboto Mono', monospace;
+
+		  font-family: 'Cormorant Garamond', serif;
+		  /*font-family:'Lora', serif; */
 		  background-color: var(--H_bkg);
 		  margin: 0;
 		  padding: 0;
@@ -24,6 +44,8 @@ p {
 }
 
 p.b2 {
+
+	font-family:'Roboto Mono', monospace;
 	overflow-wrap: normal: 
 	white-space: normal;
 	font-size: 12px;
@@ -42,6 +64,7 @@ p.CTAtext {
 }
 
 .H1 {
+	font-family: 'Cormorant Garamond', serif;
 	font-weight: 700;
 	font-size: 30px;
 	color: var(--H_typeline);
@@ -60,14 +83,18 @@ p.CTAtext {
 	color: #FFFFFF;*/
 }
 
+.navitem {
+	font-size: 12px;
+	font-family:'Roboto Mono', monospace; 
+}
 
 .b2 {
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 6;
 }
 
 .b3 {
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 6;
 }
 
@@ -112,8 +139,82 @@ p.CTAtext {
   display: inline-block;
 }
 
+/* _________________________scrollBarTest ________________________________*/
+
+.locator{
+	text-decoration: none;
+	border-top: 1px solid var(--H_typeline);
+    font-size: 10px;
+   /* background-color: var(--H_bkg);*/
+    z-index: 10000;
+    width: 100vw;
+    height:30px;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	flex: 0 0 100%;
+}
+
+.lBar {
+
+	font-family:'Roboto Mono', monospace;
+	width: calc(100vw / 9);
+	text-align: center;
+	padding: 0;
+}
+
+
+#moveBar {
+	/*width: calc(100vw / 9);*/
+	height: 20px;
+	border-radius: 10px;
+	border: 1px solid var(--H_typeline);
+	position: fixed;
+	z-index: 19999;
+	bottom: 3px;
+}
+
+#moveBar2 {
+	/*width: calc(100vw / 9);*/
+	height: 20px;
+	border-radius: 10px;
+	border: 1px solid var(--H_typeline);
+	position: fixed;
+	z-index: 19999;
+	bottom: 3px;
+}
+
+
+
 
 /* _________________________Navigation ________________________________*/	
+
+header {
+    background: #f5b335;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+}
+
+.hwllo {
+	padding-top: 100px;
+	font-size: 300px;
+	color: #000000;
+}
+
+.nav-up {
+    top: -40px;
+}
+
+
+
+footer { background: #ddd;}
+* { color: transparent}
+
+
+
 
 
 .topnav {
@@ -121,9 +222,23 @@ p.CTAtext {
 	border-bottom: 1px solid var(--H_typeline);
     font-size: 16px;
     padding: 10px;
-   /* background-color: var(--H_bkg);*/
-    z-index: 9999
+   	color: #FFFFFF;
+
+
 }
+
+
+nav {
+	z-index: 999999;
+  transition: all 0.5s;
+}
+
+
+.scrollUp{
+  transform: translateY(-80px);
+}
+ 
+     
 
 .active {
 	text-decoration: none;
@@ -136,6 +251,15 @@ p.CTAtext {
   }
 
 
+/*.scrollB {
+
+	transition: all 05s;
+	&.scrollUp
+	transform: translateY(-80px);
+}
+
+*/
+
 
 /* _________________________PANES ________________________________*/	
 
@@ -143,11 +267,13 @@ p.CTAtext {
 		  overflow: hidden;
 		  position: absolute;
 		  top: 42px;
+
+
 		}	
 
 .pane {
-	height:100vh-50px;
-	padding:0;
+	height: calc(100vh - 125px);
+	padding-bottom: 50px;
 }
 
 
@@ -447,12 +573,12 @@ p.CTAtext {
 }
 
 .c1 {
-	flex:0 0 700px;
+	flex:0 0 550px;
 }
 
 .img01{
 	overflow: hidden;
-	width: 650px;
+	width: 500px;
 	height: 50vh;
 }
 
@@ -464,8 +590,14 @@ p.CTAtext {
 	overflow: hidden;
 	width: 500px;
 	height: 50vh;
+	background-image: url("assets/02_JUICE/02j_cover_static.jpg");
+	background-position: center center;
+	background-size: 100% ;
 }
 
+.img02:hover{
+	background-image: url("assets/02_JUICE/02j_cover.gif");
+}
 
 .c3 {
 	flex:0 0 670px;

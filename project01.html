@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <head>
-
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="homestyles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
 </head>
 
 
@@ -13,22 +15,20 @@
 	  	<p id="variables"> scrolly left dummy diff</p>
 		</div-->
 <!-- Navigation___________-->
-<div class = "fixedNav">
-	<div class="topnav">	
-	   <a class="active" href="index.html">Jessica Shen</a>
-	    <div class="topnav-right" id = "responsivenav">
-	    	<a class = dummy>  </a>
-		    <a href="index.html">Featured</a>
-		    <a href="experiments.html">Experiments</a>
-		    <a href="about.html">
-		    	<svg height="13" width="22">
-					  <circle cx="8" cy="8" r="4.5" fill="white" />
-					</svg>About</a>
-		    <a href="javascript:void(0);" class="icon" onclick="mobileNav()">&#9776;</a>
-	  </div>
 
+<nav class = "topnav scrollB">	
+	   <div>
+	   <a class="active" href="index.html">Jessica Shen</a>
+	   <a href="javascript:void(0);" class="icon" onclick="mobileNav()">&#9776;</a>
+	 
+	   <div class="topnav-right" id = "responsivenav">
+		    <a href="index.html" class ="navitem">Featured</a>
+		    <a href="00_experiments.html" class ="navitem">Experiments</a>
+		    <a href="00_about.html" class ="navitem">About</a>
+	  </div>
 	</div>
-</div>
+</nav>
+
 
 <div class = "page">
 	<div class = "projectHeader">
@@ -48,7 +48,18 @@
 			<p class = "stat"> Verizon</p>
 		</div>
 	</div>
+
+
+
+
 	<div class = "pHeaderImage"> <img src = "assets/grain.png"></div>
+	<div class = "vimeo">
+		<div style="padding:67.67% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/457412440?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+		<p><a href="https://vimeo.com/457412440">Juice_vz 2</a> from <a href="https://vimeo.com/user22489579">Jessica Shen</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+	</div>
+
+
+
 	<div class = "process">
 		<div class = "process Content"> </div>
 	</div>
@@ -62,6 +73,9 @@
 
 
 <!--script type="text/javascript" src="sidescroll.js"></script-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="project.js"></script>
 
 </body>
 </html>
