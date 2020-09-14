@@ -3,13 +3,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="homestyles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 
-
-
-
-	<!--link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet"-->
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
 </head>
 
 
@@ -57,7 +53,7 @@
 
 <!--Side Scrolling Section___________-->
 <div id="page">
-    <div class="pane c0"> 
+    <div class="pane c0 img_wrap"> 
 						  	<div class = "stacked">
 
 									   	<!--a class="paneLink" href = "project01.html"-->
@@ -83,10 +79,11 @@
 							</div>
   </div>
 	<!--__________Project 1: MAILCHIMP__________-->
-  <div class="pane card c1" > 
+  <div class="pane c1 img_wrap" > 
   						<div onclick = "location.href = 'project01.html';" class = "content">
-							   	   <div class = "projNum">01 </div>
-								   <div class = "imgContainer img01"> <img src="assets/01_MCP/01m_cover.png" class= "projImage01" style="height:100%;"></div>
+							<div class = "projNum">01 </div>
+							<div class = "everything">
+								   <div class = "imgContainer img01"> <img src="assets/01_MCP/01m_cover.jpg" class= "projImage01" style="height:100%;"></div>
 								   <p class = "pn1"> Launching a New Media Site </p>
 								   <div class = "descrip">
 								   	    <svg class = "pskills0 mHide" width="69" height="60" ><use href="#lineStart" /></svg>
@@ -99,13 +96,15 @@
 									   								       <br>X Courier
 									    </p></div>
 									</div>
+							</div>
 						</div>
 
    	</div>
 	<!--__________   Project 2: JUICE____________________-->
-  <div class="pane card c2">	
-  						<div onclick = "location.href = 'project01.html';" class = "content">
-							   	   <div class = "projNum">02 </div>
+  <div class="pane c2 img_wrap">	
+  					<div onclick = "location.href = 'project01.html';" class = "content">
+						<div class = "projNum">02 THIS ONE </div>
+						<div class = "everything">
 
 							   	   <div class = "descrip mHide">
 								   	    <svg class = "pflip0" width="69" height="85" transform = "scale(1,-1)"><use href="#lineStart" /></svg>
@@ -116,10 +115,21 @@
 									   							</p> </div>
 									   <svg class = "pflip2" width="69" height="12" ><use href="#arrow" /></svg>
 									   <div class = "pflip3"> <p class ="b2">Verizon </p></div>
-									</div>
+								   </div>
 
 								   <p class = "pn1"> Re-inventing Your Data Plan </p>
-								   <div class = "imgContainer img02"> <img src="assets/02_JUICE/02j_cover.jpg" class= "projImage" style="width:100%;"></div>
+								  
+
+
+								   <div class = "imgContainer img02" > 
+								   		<img class ="homeCover" id = "animated" src = "assets/02_JUICE/02j_cover.gif">
+								   		<img class ="homeCover" id = "static" src = "assets/02_JUICE/02j_cover.png">
+								   </div>
+
+
+
+
+
 								   <div class = "descrip dHide">
 									   <div class = "pskills b2"> <p class="b2"> Experience design
 									   							<br> Motion Design
@@ -128,19 +138,22 @@
 									   <svg class = "pskills2" width="69" height="12" ><use href="#arrow" /></svg>
 									   <div class = "pskills3"> <p class ="b2">Verizon </p></div>
 									</div>
+
 						</div>
+				</div>
   </div>
 
 
 	<!--__________   Project 3: CHASE____________________-->
-  <div class="pane card c3">
+  <div class="pane c3 img_wrap">
 						  	<div class = "stacked">
 
 									   	<!--a class="paneLink" href = "project01.html"-->
 						  				<div onclick = "location.href = 'project01.html';" class = "stack3 content">
-											   	   <div class = "projNum">03 </div>
+											<div class = "projNum"> 03 </div>
+											<div class = "everything">
 												   <div class = "imgContainer img03"> <img src="assets/03_CHASE/03c_cover.png" class= "projImage" style="width:100%;"></div>
-												   <div class = "projName"> Envisioning the Future of Banking </div>
+												   <p class = "pn1"> Envisioning the Future of Banking </p>
 												   <div class = "descrip">
 												   	    <svg class = "pskills0 mHide" width="69" height="60" ><use href="#lineStart" /></svg>
 													   <div class = "pskills b2"> <p class="b2"> Experience design
@@ -150,6 +163,7 @@
 													   <svg class = "pskills2" width="69" height="12" ><use href="#arrow" /></svg>
 													   <div class = "pskills3"> <p class ="b2">Verizon </p></div>
 													</div>
+											</div>
 										</div>
 
 
@@ -173,9 +187,10 @@
 
 
 	<!--__________   Project 4: SAMSUNG____________________-->
-  <div class="pane card c4">  
+  <div class="pane c4 img_wrap">  
     						<div onclick = "location.href = 'project01.html';" class = "content">
 							   	   <div class = "projNum">04 </div>
+							   	   <div class = "everything">
 							   	   <div class = "descrip mHide">
 								   	    <svg class = "pflip0" width="69" height="85" transform = "scale(1,-1)"><use href="#lineStart" /></svg>
 									   <div class = "pflip1 b2"> <p class="b2"> Experience design
@@ -197,17 +212,19 @@
 									   <svg class = "pskills2" width="69" height="12" ><use href="#arrow" /></svg>
 									   <div class = "pskills3"> <p class ="b2">Samsung </p></div>
 									</div>
+								</div>
 						</div>
 
 
   </div>
 
 	<!--__________   Project 5: Hawke____________________-->
-    <div class="pane card c5">  	 						
+    <div class="pane c5 img_wrap">  	 						
   						<div onclick = "location.href = 'project01.html';" class = "content">
 							   	   <div class = "projNum">05 </div>
+							   	   <div class = "everything">
 								   <div class = "imgContainer img05"> <img src="assets/05_HAWKE/05h_cover.png" class= "projImage" style="width:100%;"></div>
-								   <div class = "projName"> _____ ____ ______ </div>
+								   <p class = "pn1"> _____ ____ ______ </p>
 								   <div class = "descrip">
 								   	    <svg class = "pskills0 mHide" width="69" height="60" ><use href="#lineStart" /></svg>
 									   <div class = "pskills b2"> <p class="b2"> Leadership & Management 
@@ -218,18 +235,20 @@
 									   <svg class = "pskills2" width="69" height="12" ><use href="#arrow" /></svg>
 									   <div class = "pskills3"> <p class ="b2">_______ </p></div>
 									</div>
+								</div>
 						</div>
   </div>
 
 	<!--__________   Project 6: G-Tech____________________-->
-  <div class="pane card c6"> 
+  <div class="pane c6 img_wrap"> 
 						  	<div class ="stacked">
 
 									   	<!--a class="paneLink" href = "project01.html"-->
 						  				<div onclick = "location.href = 'project01.html';" class = "stack5 content">
 											   	   <div class = "projNum">06 </div>
+											   	   <div class = "everything">
 												   <div class = "imgContainer img06"> <img src="assets/06_GTEAM/06g_cover.gif" class= "projImage" style="width:100%;"></div>
-												   <div class = "projName"> Defining Brand Motion </div>
+												   <p class = "pn1"> Defining Brand Motion </p>
 												   <div class = "descrip">
 												   	    <svg class = "pskills0 mHide" width="69" height="60" ><use href="#lineStart" /></svg>
 													   <div class = "pskills b2"> <p class="b2">Motion Design
@@ -238,6 +257,7 @@
 													   <svg class = "pskills2" width="69" height="12" ><use href="#arrow" /></svg>
 													   <div class = "pskills3"> <p class ="b2">Western Digital </p></div>
 													</div>
+												</div>
 										</div>
 
 										<div class = "stack6 mHide">
@@ -254,12 +274,13 @@
   </div>
 
 	<!--______________   Project 7: Taggle____________________-->
-    <div class="pane card c7">  	 						
+    <div class="pane c7 img_wrap">  	 						
   						<div onclick = "location.href = 'project01.html';" class = "content">
 							   	   <div class = "projNum">07 </div>
+							   	   <div class = "everything">
 								   <div class = "imgContainer img07"> <img src="assets/09_TAGGLE/09t_cover.png" class= "projImage" style="width:100%;"></div>
-								   <div class = "projName"> 
-								   __________________ </div>
+								   <p class = "pn1"> 
+								   __________________ </p>
 								   <div class = "descrip">
 								   	    <svg class = "pskills0 mHide" width="69" height="60" ><use href="#lineStart" /></svg>
 									   <div class = "pskills b2"> <p class="b2"> Experience Strategy
@@ -270,17 +291,19 @@
 									   <svg class = "pskills2" width="69" height="12" ><use href="#arrow" /></svg>
 									   <div class = "pskills3"> <p class ="b2">_________</p></div>
 									</div>
+								</div>
 						</div>
   </div>
 
   <!-- endStart necessary for JS-->
 
   <!--_______________   Project 8: SXSW____________________-->
-  <div class="pane card c8" id ="endStart">  	 						
+  <div class="pane c8 img_wrap" id ="endStart">  	 						
   						<div onclick = "location.href = 'project01.html';" class = "content">
 							   	   <div class = "projNum">08 </div>
+							   	   <div class = "everything">
 								   <div class = "imgContainer img08"> <img src="assets/08_SXSW/08s_cover.jpg" class= "projImage" style="width:100%;"></div>
-								   <div class = "projName"> Discovering Cultural Design Differences </div>
+								   <p class = "pn1"> Discovering Cultural Design Differences </p>
 								   <div class = "descrip">
 								   	    <svg class = "pskills0 mHide" width="69" height="60" ><use href="#lineStart" /></svg>
 									   <div class = "pskills b2"> <p class="b2"> Experience Analysis
@@ -296,6 +319,7 @@
 
 									   </p></div>
 									</div>
+								</div>
 						</div>
   </div>
 
@@ -310,7 +334,7 @@
 <!--____________________________________________   Repeat cards____________________________________________________-->
 
 
-    <div class="pane c0 mHide"> 
+    <div class="pane c0 mHide img_wrap"> 
 						  	<div class = "stacked">
 
 									   	<!--a class="paneLink" href = "project01.html"-->
@@ -336,7 +360,7 @@
 							</div>
   </div>
 	<!--__________Project 1: MAILCHIMP__________-->
-  <div class="pane card c1 mHide" > 
+  <div class="pane c1 mHide img_wrap" > 
   						<div onclick = "location.href = 'project01.html';" class = "content">
 							   	   <div class = "projNum">01 </div>
 								   <div class = "imgContainer img01"> <img src="assets/01_MCP/01m_cover.png" class= "projImage01" style="height:100%;"></div>
@@ -356,7 +380,7 @@
 
    	</div>
 	<!--__________   Project 2: JUICE____________________-->
-  <div class="pane card c2 mHide">	
+  <div class="pane c2 mHide img_wrap">	
   						<div onclick = "location.href = 'project01.html';" class = "content">
 							   	   <div class = "projNum">02 </div>
 
@@ -384,14 +408,14 @@
 						</div>
   </div>
 
- <div class="pane card c3 mHide">
+ <div class="pane c3 mHide ">
 						  	<div class = "stacked">
 
 									   	<!--a class="paneLink" href = "project01.html"-->
-						  				<div onclick = "location.href = 'project01.html';" class = "stack3 content">
+						  				<div onclick = "location.href = 'project01.html';" class = "stack3 content img_wrap">
 											   	   <div class = "projNum">03 </div>
 												   <div class = "imgContainer img03"> <img src="assets/03_CHASE/03c_cover.png" class= "projImage" style="width:100%;"></div>
-												   <div class = "projName"> Envisioning the Future of Banking </div>
+												   <div class = "pn1"> Envisioning the Future of Banking </div>
 												   <div class = "descrip">
 												   	    <svg class = "pskills0 mHide" width="69" height="60" ><use href="#lineStart" /></svg>
 													   <div class = "pskills b2"> <p class="b2"> Experience design
@@ -424,7 +448,7 @@
 
 
 	<!--__________   Project 4: SAMSUNG____________________-->
-  <div class="pane card c4 mHide">  
+  <div class="pane c4 mHide img_wrap">  
     						<div onclick = "location.href = 'project01.html';" class = "content">
 							   	   <div class = "projNum">04 </div>
 							   	   <div class = "descrip mHide">
@@ -454,11 +478,11 @@
   </div>
 
 	<!--__________   Project 5: Hawke____________________-->
-    <div class="pane card c5 mHide">  	 						
+    <div class="pane c5 mHide img_wrap">  	 						
   						<div onclick = "location.href = 'project01.html';" class = "content">
 							   	   <div class = "projNum">05 </div>
 								   <div class = "imgContainer img05"> <img src="assets/05_HAWKE/05h_cover.png" class= "projImage" style="width:100%;"></div>
-								   <div class = "projName"> _____ ____ ______ </div>
+								   <div class = "pn1"> _____ ____ ______ </div>
 								   <div class = "descrip">
 								   	    <svg class = "pskills0 mHide" width="69" height="60" ><use href="#lineStart" /></svg>
 									   <div class = "pskills b2"> <p class="b2"> Leadership & Management 
@@ -473,14 +497,14 @@
   </div>
 
 	<!--__________   Project 6: G-Tech____________________-->
-  <div class="pane card c6 mHide"> 
+  <div class="pane c6 mHide"> 
 						  	<div class ="stacked">
 
 									   	<!--a class="paneLink" href = "project01.html"-->
-						  				<div onclick = "location.href = 'project01.html';" class = "stack5 content">
+						  				<div onclick = "location.href = 'project01.html';" class = "stack5 content  img_wrap">
 											   	   <div class = "projNum">06 </div>
 												   <div class = "imgContainer img06"> <img src="assets/06_GTEAM/06g_cover.gif" class= "projImage" style="width:100%;"></div>
-												   <div class = "projName"> Defining Brand Motion </div>
+												   <div class = "pn1"> Defining Brand Motion </div>
 												   <div class = "descrip">
 												   	    <svg class = "pskills0 mHide" width="69" height="60" ><use href="#lineStart" /></svg>
 													   <div class = "pskills b2"> <p class="b2">Motion Design
@@ -505,11 +529,11 @@
   </div>
 
 	<!--______________   Project 7: Taggle____________________-->
-    <div class="pane card c7 mHide">  	 						
+    <div class="pane card c7 mHide img_wrap">  	 						
   						<div onclick = "location.href = 'project01.html';" class = "content">
 							   	   <div class = "projNum">07 </div>
 								   <div class = "imgContainer img07"> <img src="assets/09_TAGGLE/09t_cover.png" class= "projImage" style="width:100%;"></div>
-								   <div class = "projName"> 
+								   <div class = "pn1"> 
 								   __________________ </div>
 								   <div class = "descrip">
 								   	    <svg class = "pskills0 mHide" width="69" height="60" ><use href="#lineStart" /></svg>
@@ -527,11 +551,11 @@
   <!-- endLast necessary for JS-->
 
   <!--_______________   Project 8: SXSW____________________-->
-  <div class="pane card c8 mHide" id ="endLast">  	 						
+  <div class="pane card c8 mHide img_wrap" id ="endLast">  	 						
   						<div onclick = "location.href = 'project01.html';" class = "content">
 							   	   <div class = "projNum">08 </div>
 								   <div class = "imgContainer img08"> <img src="assets/08_SXSW/08s_cover.jpg" class= "projImage" style="width:100%;"></div>
-								   <div class = "projName"> Discovering Cultural Design Differences </div>
+								   <div class = "pn1"> Discovering Cultural Design Differences </div>
 								   <div class = "descrip">
 								   	    <svg class = "pskills0 mHide" width="69" height="60" ><use href="#lineStart" /></svg>
 									   <div class = "pskills b2"> <p class="b2"> Experience Analysis
@@ -571,6 +595,7 @@
 Mobile footer goes here </div-->
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript" src="index_sidescroll.js"></script>
 
 </body>

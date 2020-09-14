@@ -126,6 +126,39 @@ function dragElement(elmnt) {
 
 
 
+
+$(function(){
+    $('.img_wrap').on( 'mouseover', function() {
+      $( this ).find( '.imgContainer').toggleClass('animated', 'static');
+
+      /*   $('.img_wrap .imgContainer').toggleClass('animated', 'static');*/
+    })
+})
+
+$(function(){
+    $('.img_wrap').on( 'mouseout', function() {
+      $( this ).find( '.imgContainer').toggleClass('animated', 'static');
+
+      /*   $('.img_wrap .imgContainer').toggleClass('animated', 'static');*/
+    })
+})
+
+/*
+$(function(){
+    $('.img_wrap').on( 'mouseout', function() {
+         $('.img_wrap .imgContainer').toggleClass('animated', 'static');
+    })
+})*/
+
+/*
+$(function(){
+    $('#img_wrap').on( 'mouseout', function() {
+         $(this '.imgContainer').toggleClass('animated', 'static');
+    })
+})
+*/
+
+
 //__NOTES___________________________________________________________________________________________________________________________________________________________
 
 
