@@ -152,13 +152,18 @@ function copyDivToClipboard() {
                     document.execCommand("copy");
                     window.getSelection().removeAllRanges();// to deselect
   var tooltip = document.getElementById("myTooltip");
+  var tooltip2 = document.getElementById("myTooltip2");
+
   tooltip.innerHTML = "🥳 Copied! TTYS! ";
+  tooltip2.innerHTML = "🥳 Copied! TTYS! ";
                 }
 
 
 function outFunc() {
   var tooltip = document.getElementById("myTooltip");
+  var tooltip2 = document.getElementById("myTooltip2");
   tooltip.innerHTML = "📋 Click to copy";
+  tooltip2.innerHTML = "📋 Click to copy";
 }
 
 
