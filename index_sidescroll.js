@@ -143,6 +143,25 @@ $(function(){
     })
 })
 
+
+function copyDivToClipboard() {
+ var range = document.createRange();
+                   range.selectNode(document.getElementById("emailCopy"));
+                    window.getSelection().removeAllRanges(); // clear current selection
+                    window.getSelection().addRange(range); // to select text
+                    document.execCommand("copy");
+                    window.getSelection().removeAllRanges();// to deselect
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "🥳 Copied! TTYS! ";
+                }
+
+
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "📋 Click to copy";
+}
+
+
 /*
 $(function(){
     $('.img_wrap').on( 'mouseout', function() {

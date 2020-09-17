@@ -50,32 +50,56 @@
 
 
 
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+
+
+
+
+<svg width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg"><symbol id = "tippy">
+<mask id="path-1-inside-1" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19 0C15.6863 0 13 2.68629 13 6V12.6357L0.696198 19.7393L13 26.8429V34C13 37.3137 15.6863 40 19 40H144C147.314 40 150 37.3137 150 34V6C150 2.68629 147.314 0 144 0H19Z"/>
+</mask>
+<path d="M13 12.6357L13.5 13.5017L14 13.213V12.6357H13ZM0.696198 19.7393L0.196197 18.8732L-1.3038 19.7393L0.196198 20.6053L0.696198 19.7393ZM13 26.8429H14V26.2655L13.5 25.9768L13 26.8429ZM14 6C14 3.23858 16.2386 1 19 1V-1C15.134 -1 12 2.13401 12 6H14ZM14 12.6357V6H12V12.6357H14ZM1.1962 20.6053L13.5 13.5017L12.5 11.7696L0.196197 18.8732L1.1962 20.6053ZM13.5 25.9768L1.1962 18.8732L0.196198 20.6053L12.5 27.7089L13.5 25.9768ZM14 34V26.8429H12V34H14ZM19 39C16.2386 39 14 36.7614 14 34H12C12 37.866 15.134 41 19 41V39ZM144 39H19V41H144V39ZM149 34C149 36.7614 146.761 39 144 39V41C147.866 41 151 37.866 151 34H149ZM149 6V34H151V6H149ZM144 1C146.761 1 149 3.23858 149 6H151C151 2.13401 147.866 -1 144 -1V1ZM19 1H144V-1H19V1Z" fill="#2F3269" mask="url(#path-1-inside-1)"/>
+</svg>
+
+
+
 
 <!--Side Scrolling Section___________-->
 <div id="page">
     <div class="pane c0 img_wrap"> 
+						  	
+
 						  	<div class = "stacked">
 
 									   	<!--a class="paneLink" href = "project01.html"-->
 						  				<div class = "stack1">
-										   				<p class = "H1">Hi there! I'm Jess.</p>
-										   				<p class = "B1"> I'm a experience and motion designer that believes in the power of design to bring people together through thoughtful experiences.Currently an Experience Design Director at R/GA,creating products and tools for global clients. 
+										   				<p class = "H1">Oh, hi there. <br> I'm Jess.</p>
+										   				<p class = "B1"> I'm an experience designer and animator that creates products to help people explore their world a little differently. 
+
+														<br> <br>Currently an Experience Design Director at R/GA in New York City.   
 										   				</p>
 
 										   				 <a class = "CTA" href="about.html">More about Me</a>
 												
 												</div>	
 												<div class = "stack2 mHide">
-										   				<p> Contact me
-										   				    <br>hello@jessicashen.com 
-										   				</p>
-										   				<div > 
-										   					<img class = "social" src="linkedin.svg">
-										   					<img class = "social" src="linkedin.svg">
-										   					<img class = "social" src="linkedin.svg">
+										   				<p> find me on the internet:</p>
+														<div class="tooltip" >
+															<div
+															onclick="copyDivToClipboard()" onmouseout="outFunc()" class = "abc">
+															<p id = "emailCopy">hello@jessicashen.com</p>   
+															<span class="tooltiptext tip2" id="myTooltip">📋 Click to copy</span>
+															<svg class = "tooltiptext" width="180" height="40" ><use href="#tippy" /></svg>
+															</div>
+														</div>
+												</div>		
+										   				<div class = "social" > 
+										   					<a href="https://www.linkedin.com/in/jessshen/"><img class = "social1" src="assets/social/linkedin.png"></a>
+										   					<a href="https://www.linkedin.com/in/jessshen/"><img class = "social1" src="assets/social/wnw.png"></a>
+										   					<a href="https://www.instagram.com/jes.sh/"><img class = "social1" src="assets/social/insta.png"></a>
 										   				</div>
-										   				<p> Design & Development © Jessica Shen 2020</p>
-												</div>			
+										   				<p class = "credit"> Design & Development © Jessica Shen 2020</p>	
 							</div>
   </div>
 	<!--__________Project 1: MAILCHIMP__________-->
@@ -222,9 +246,8 @@
     <div class="pane c5 img_wrap">  	 						
   						<div onclick = "location.href = 'project01.html';" class = "content">
 							   	   <div class = "projNum">05 </div>
-							   	   <div class = "everything">
 								   <div class = "imgContainer img05"> <img src="assets/05_HAWKE/05h_cover.png" class= "projImage" style="width:100%;"></div>
-								   <p class = "pn1"> _____ ____ ______ </p>
+								   <div class = "pn1"> _____ ____ ______ </div>
 								   <div class = "descrip">
 								   	    <svg class = "pskills0 mHide" width="69" height="60" ><use href="#lineStart" /></svg>
 									   <div class = "pskills b2"> <p class="b2"> Leadership & Management 
@@ -235,7 +258,6 @@
 									   <svg class = "pskills2" width="69" height="12" ><use href="#arrow" /></svg>
 									   <div class = "pskills3"> <p class ="b2">_______ </p></div>
 									</div>
-								</div>
 						</div>
   </div>
 
@@ -339,24 +361,32 @@
 
 									   	<!--a class="paneLink" href = "project01.html"-->
 						  				<div class = "stack1">
-										   				<p class = "H1">Hi there! I'm Jess.</p>
-										   				<p class = "B1"> I'm a experience and motion designer that believes in the power of design to bring people together through thoughtful experiences.Currently an Experience Design Director at R/GA,creating products and tools for global clients. 
+										   				<p class = "H1">Oh, hi there. <br> I'm Jess.</p>
+										   				<p class = "B1"> I'm an experience designer and animator that creates products to help people explore their world a little differently. 
+
+														<br> <br>Currently an Experience Design Director at R/GA in New York City.   
 										   				</p>
 
 										   				 <a class = "CTA" href="about.html">More about Me</a>
 												
 												</div>	
 												<div class = "stack2 mHide">
-										   				<p> Contact me
-										   				    <br>hello@jessicashen.com 
-										   				</p>
-										   				<div > 
-										   					<img class = "social" src="linkedin.svg">
-										   					<img class = "social" src="linkedin.svg">
-										   					<img class = "social" src="linkedin.svg">
+										   				<p class = "b2"> find me on the internet:</p>
+														<div class="tooltip" >
+															<div
+															onclick="copyDivToClipboard()" onmouseout="outFunc()" class = "abc">
+															<p id = "emailCopy">hello@jessicashen.com</p>   
+															<span class="tooltiptext tip2" id="myTooltip">📋 Click to copy</span>
+															<svg class = "tooltiptext" width="180" height="40" ><use href="#tippy" /></svg>
+															</div>
+														</div>
+												</div>		
+										   				<div class = "social" > 
+										   					<a href="https://www.linkedin.com/in/jessshen/"><img class = "social1" src="assets/social/linkedin.png"></a>
+										   					<a href="https://www.linkedin.com/in/jessshen/"><img class = "social1" src="assets/social/wnw.png"></a>
+										   					<a href="https://www.instagram.com/jes.sh/"><img class = "social1" src="assets/social/insta.png"></a>
 										   				</div>
-										   				<p> Design & Development © Jessica Shen 2020</p>
-												</div>			
+										   				<p class = "credit"> Design & Development © Jessica Shen 2020</p>	
 							</div>
   </div>
 	<!--__________Project 1: MAILCHIMP__________-->
@@ -371,6 +401,8 @@
 									   							<br> Motion Design
 									   							<br> Experience Strategy
 									   							</p> </div>
+
+
 									   <svg class = "pskills2" width="69" height="12" ><use href="#arrow" /></svg>
 									   <div class = "pskills3"> <p class ="b2">Mailchimp 
 									   								       <br>X Courier
@@ -381,8 +413,9 @@
    	</div>
 	<!--__________   Project 2: JUICE____________________-->
   <div class="pane c2 mHide img_wrap">	
-  						<div onclick = "location.href = 'project01.html';" class = "content">
-							   	   <div class = "projNum">02 </div>
+  				<div onclick = "location.href = 'project01.html';" class = "content">
+						<div class = "projNum">02 </div>
+						<div class = "everything">
 
 							   	   <div class = "descrip mHide">
 								   	    <svg class = "pflip0" width="69" height="85" transform = "scale(1,-1)"><use href="#lineStart" /></svg>
@@ -393,10 +426,21 @@
 									   							</p> </div>
 									   <svg class = "pflip2" width="69" height="12" ><use href="#arrow" /></svg>
 									   <div class = "pflip3"> <p class ="b2">Verizon </p></div>
-									</div>
+								   </div>
 
 								   <p class = "pn1"> Re-inventing Your Data Plan </p>
-								   <div class = "imgContainer img02"> <!--img src="assets/02_JUICE/02j_cover.gif" class= "projImage" style="width:100%;"--></div>
+								  
+
+
+								   <div class = "imgContainer img02" > 
+								   		<img class ="homeCover" id = "animated" src = "assets/02_JUICE/02j_cover.gif">
+								   		<img class ="homeCover" id = "static" src = "assets/02_JUICE/02j_cover.png">
+								   </div>
+
+
+
+
+
 								   <div class = "descrip dHide">
 									   <div class = "pskills b2"> <p class="b2"> Experience design
 									   							<br> Motion Design
@@ -405,7 +449,9 @@
 									   <svg class = "pskills2" width="69" height="12" ><use href="#arrow" /></svg>
 									   <div class = "pskills3"> <p class ="b2">Verizon </p></div>
 									</div>
+
 						</div>
+				</div>
   </div>
 
  <div class="pane c3 mHide ">

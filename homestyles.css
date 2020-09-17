@@ -22,13 +22,27 @@ html {
     background: #FF0000;
 }
 
+@font-face {
+    font-family: NB Akademie Std;
+    font-weight: lighter;
+    src: url("fonts/NBA/NBAkademieStd-Light.otf") format("opentype");
+}
+
+
+
+@font-face {
+    font-family: NB Akademie Std;
+    src: url("fonts/NBA/NBAkademieStd.otf") format("opentype");
+}
+
+
 
 
 body{
 		  /*hide scrollbars */
 		  overflow-x:hidden;
 
-		  font-family: 'Source Sans Pro', sans-serif;
+		  font-family: 'NB Akademie Std', sans-serif;
 		  color:var(--H_typeline);
 
 		 /* font-family: 'Cormorant Garamond', serif;*/
@@ -37,7 +51,75 @@ body{
 		  margin: 0;
 		  padding: 0;
 		}
-/* _________________________GENERAL STYLING ________________________________*/	
+
+
+/*
+
+@font-face {
+    font-family: GraublauWeb;
+    font-weight: bold;
+    src: url("path/GraublauWebBold.otf") format("opentype");
+}*/
+
+
+
+.abc{
+	font-size: 18px;
+	background-color: var(--H_bkg);
+	border: none;
+	color: var(--H_typeline);
+	padding: 0;
+	cursor: pointer;
+	position: absolute;
+	margin: 0;
+}
+
+#emailCopy{
+	margin:0;
+}
+
+.abc:hover {
+	text-decoration: underline;
+}
+
+
+.tooltip {
+  padding-top:1vh;
+  position: absolute;
+  display: inline-block;
+      outline: none;
+}
+
+.tooltip .tooltiptext {
+	font-family:'Roboto Mono', monospace;
+	font-size: 12px;
+	width: 150px;
+  visibility: hidden;
+  color: var(--H_typeline);
+
+  padding: 5px;
+  z-index: 999;
+  position: absolute;
+  top: -15px;
+  left: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tip2 {
+	margin-top: 10px;
+	margin-left: 23px;
+	text-align: left;
+}
+
+
+
+		/* _________________________GENERAL STYLING ________________________________*/	
 p {
 	overflow-wrap: normal: 
 	white-space: normal;
@@ -51,8 +133,15 @@ p.b2 {
 	font-size: 12px;
 }
 
+p.find{
+
+	font-family:'Roboto Mono', monospace;
+	overflow-wrap: normal: 
+	white-space: normal;
+	font-size: 16px;
+}
+
 p.pn1{
-	font-weight: 700;
 	font-size: 24px;
 }
 
@@ -63,18 +152,19 @@ p.CTAtext {
 	overflow-wrap: normal
 }
 
-.H1 {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 700;
-	font-size: 30px;
+p.H1 {
+	font-family: 'NB Akademie Std', sans-serif;
+	font-size: 35px;
 	color: var(--H_typeline);
 }
 
-.B1 {
-	font-weight: 400;
-	font-size: 30;
+p.B1{
+
+	font-weight: lighter;
+	font-size: 18px;
 	color: var(--H_typeline);
 	overflow-wrap: normal;
+	padding-top: 8px;
 }
 .projNum {
 	font-weight: 700;
@@ -107,10 +197,12 @@ p.CTAtext {
 }
 
 .CTA {
+	font-size: 12px;
+	font-family:'Roboto Mono', monospace; 
 	display: inline-block;
 	border: 1px solid var(--H_typeline);
-	padding: 10px;
-	margin-top: 20px;
+	padding: 10px 20px;
+	margin-top: 10px;
 	color:var(--H_typeline);
 	text-decoration: none;
 	margin-bottom: 50px;
@@ -161,27 +253,30 @@ p.CTAtext {
 	width: calc(100vw / 9);
 	text-align: center;
 	padding: 0;
+	z-index: 999;
 }
 
 
 #moveBar {
 	/*width: calc(100vw / 9);*/
 	height: 20px;
-	border-radius: 10px;
+	border-radius: 15px;
 	border: 1px solid var(--H_typeline);
 	position: fixed;
-	z-index: 19999;
+	z-index: 500;
 	bottom: 3px;
+	/*background-color: var(--H_typeline);*/
 }
 
 #moveBar2 {
 	/*width: calc(100vw / 9);*/
 	height: 20px;
-	border-radius: 10px;
+	border-radius: 15px;
 	border: 1px solid var(--H_typeline);
 	position: fixed;
-	z-index: 19999;
+	z-index: 501;
 	bottom: 3px;
+	/*background-color: var(--H_typeline);*/
 }
 
 
@@ -191,7 +286,7 @@ p.CTAtext {
 
 header {
     background: #f5b335;
-    height: 40px;
+    height: 41px;
     position: fixed;
     top: 0;
     transition: top 0.1s /*ease-in-out*/;
@@ -258,13 +353,13 @@ nav {
 #page {
 		  overflow: hidden;
 		  position: absolute;
-		  top: 42px;
+		  top: 40px;
 
 
 		}	
 
 .pane {
-	height: calc(100vh - 125px);
+	height: calc(100vh - 122px);
 	padding-bottom: 50px;
 }
 
@@ -288,19 +383,6 @@ nav {
 
 }
 
-
-.stack1 {
-	padding-right:80px;
-	/*word-break:break-all;*/
-	white-space: normal;
-
-}
-
-.stack2{
-	text-decoration: none;
-	border-top: 1px solid var(--H_typeline);
-	padding-top: 70px;
-}
 
 
 .descrip {
@@ -368,7 +450,7 @@ nav {
 
 .stacked {
 	width: 100%;
-	height:50%;
+	height:100%;
 	position:static;
 
 }
@@ -427,13 +509,6 @@ nav {
 	padding:30px 0px 30px 10px;
 }
 
-.stack1 {
-	padding-left:10px;
-	padding-right:80px;
-	overflow-wrap: normal;
-	max-width: 100%;
-
-}
 
 
 .descrip {
@@ -522,34 +597,28 @@ nav {
 }
 
 
-
-
-
-
-
 .stack1 {
-	width: 80%;
-	height: 50%;
-	/*position: absolute;*/
-	padding-left: 30px;
-	padding-right:80px;
+	padding: 8px 150px 38px 39px;
+	overflow-wrap: normal;
+	white-space: normal;
+	max-width: 100%;
 
 }
 
 .stack2{
 	width: 100%;
-	padding-left:10px;
+	height: 21%;
 	text-decoration: none;
 	border-top: 1px solid var(--H_typeline);
 	position: absolute;
 	bottom:0;
-	padding-left:10px;
-	padding-top: 70px;
+	padding: 0px 30px 30px 30px;
 }
+
 
 .stacked {
 	width: 100%;
-	height:50%;
+	height:100%;
 	position:static;
 
 }
@@ -589,7 +658,29 @@ nav {
 
 
 .c0 {
-	flex:0 0 560px;
+	flex:0 0 620px;
+}
+
+
+p.credit{
+	font-family:'Roboto Mono', monospace;
+	font-size: 12px;
+	position: absolute; 
+	right:20px;
+	bottom:0px;
+}
+
+.social {
+	position: absolute;
+	bottom: 10px;
+	left: 30px;
+}
+
+.social1 {
+	padding-right: 5px;
+	width: 35px;
+}
+
 }
 
 .c1 {
