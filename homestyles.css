@@ -3,7 +3,7 @@
 	/*--H_bkg: #ffffff;
 	--H_typeline:#343890;  F90000*/
 
-	--H_bkg: #FFFFFF; /*#FBF8ED;*/
+	--H_bkg: #F8F4F1; /*#FBF8ED;*/
 	--H_typeline:#343890;
 
 }
@@ -713,10 +713,6 @@ p.credit{
 
 
 
-
-
-
-
 .c3 {
 	flex:0 0 670px;
 
@@ -754,14 +750,16 @@ p.credit{
 
 
 .c4 {
-	flex:0 0 400px;
+	flex:0 0 550px;
 }
 
 
 .img04{
 	overflow: hidden;
-	width: 300px;
-	height:70vh;
+
+	width:490px;
+	height:60vh;
+
 }
 
 
