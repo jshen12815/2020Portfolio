@@ -857,43 +857,6 @@ p.credit{
 
 /* ___________________project pages */
 
-/*
-.projectPage{
-	margin-top: 40px;
-	padding-left: 30px;
-	padding-right: 30px;
-}
-.projectHeader{
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-}
-.pHeadNumber{
-	padding-top: 50px;
-
-}
-
-.pHeadDesc{
-	align-self: start;
-	width:60%;
-
-
-}
-.spacer{
-	width: 20%;
-}
-
-.pHeadDesc{
-
-}
-
-.functional{
-	width:20%;
-	align-self: end;
-	float:right;
-
-
-}*/
 
 .projectPage{
 	margin-top: 40px;
@@ -1023,12 +986,17 @@ p.H2{
 
 
 @media only screen and (min-width: 1200px){
-	.fullHed{
+.projectPage{
 		display: row;
 	}
 .pHeadNumber{
 	float:left;
 	padding-right: 50px
+
+}
+
+.fullHED {
+	float: right;
 
 }
 
